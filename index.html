@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_9</title>
+</head>
+<body>
+    <script>
+
+// Question No 1,2
+var futureStudent = [];
+//Question No 3
+var i_stringArr = ["apple", "banana", "orange", "grape"];
+//Question No 4
+var i_numArr = [1,2,3,4,5];
+//Question No 5
+var i_booleanArr = [true,false];
+//Question No 6
+var mixedArr = ["Apple","Banana", 42 , true];
+//Question No 7
+var qualification = ["SSC","HSC","BCS","BS","BCOM","MS","M.Phil.","PhD"]
+document.write("<h2>Qualifications</h2>");
+document.write("<ol>");
+for (var i = 0; i < qualification.length; i++) {
+    document.write("<li>"+") " + qualification[i] + "</li>");
+}
+document.write("</ol>");
+//Question No 8
+var studentName = ["Naveed","Aslam","Kashif"];
+var studentScore = [488,480,450];
+// Function to calculate percentage
+function calculatePercentage(score,TotalMarks){
+    return(score/TotalMarks)*100;
+}
+document.write("<ul>")
+var TotalMarks=500;
+for (var i = 0; i<studentName.length;i++){
+    var percentage = calculatePercentage(studentScore[i] , TotalMarks)
+
+    document.write("<li>")
+        document.write("Name " + studentName[i]+" ")
+        document.write("Score "+ studentScore[i]+" ")
+        document.write("Percentage "+ percentage +" %")
+        document.write("</li>")
+}
+document.write("</ul>")
+
+
+
+
+
+    </script>
+</body>
+</html>
